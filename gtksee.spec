@@ -48,7 +48,7 @@ Microsoft(r).
 
 %build
 rm -rf missing
-gettextize --copy --force
+%{__gettextize}
 aclocal
 %{__autoconf}
 %{__automake}
