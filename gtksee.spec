@@ -49,6 +49,8 @@ Microsoft(r).
 
 # it's encoded in gb2312
 mv -f po/{zh_CN.EUC,zh_CN}.po
+# it's Ukrainian, not Russian
+mv -f po/{ru_UA,uk}.po
 
 %build
 %{__gettextize}
