@@ -7,7 +7,8 @@ Version:	0.5.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
-Source0:	http://www.zg169.net/~hotaru/gtksee/%{name}-%{version}.tar.gz
+Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
+# Source0-md5: 5b40d1e566c3577001db449ade251479
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		gtksee.xpm
