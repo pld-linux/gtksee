@@ -5,7 +5,7 @@ Summary(pt_BR):	Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
 Version:	0.5.0
 Release:	4
-License:	GPL2
+License:	GPL v2
 Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
