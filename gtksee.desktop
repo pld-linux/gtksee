@@ -1,9 +1,12 @@
 [Desktop Entry]
 Name=GtkSee
 Comment=Image Viewer
-Comment[es]=Utilitario para visualizaci�n de im�genes
-Comment[pt]=Utilit�rio para visualiza��o de imagens
+Comment[es]=Utilitario para visualización de imágenes
+Comment[pl]=Przeglądarka obrazków
+Comment[pt]=Utilitário para visualização de imagens
+Comment[pt_BR]=Utilitário para visualização de imagens
 Exec=gtksee
 Icon=gtksee.png
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
