@@ -1,5 +1,6 @@
 Summary:	A Image viewer based on X-Window system and GTK+
 Summary(es):	Un visualizador de imágenes basado en X Window y GTK+
+Summary(pl):	Przegl±darka plików graficznych oparta na bibliotece GTK+
 Summary(pt_BR):Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
 Version:	0.5.0
@@ -31,6 +32,11 @@ Unix platform.
 El visor de imágenes permite visualizar y manejar una variedad de
 formatos de imágenes. Pretendes tener las mismas funciones del ACD
 See, que es mucho popular.
+
+%description -l pl
+Gtksee to przegl±darka plików graficznych dzia³aj±ca pod X Window
+System i korzystaj±ca z biblioteki GTK+. Ma jak najbardziej przypominaæ
+znan± ze ¶wiata MS Windows przegl±darkê ACD See.
 
 %description -l pt_BR
 Um visualizador de imagens baseado no X Window e GTK+. Pretende ter as
