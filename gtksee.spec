@@ -1,15 +1,16 @@
 Summary:	A Image viewer based on X-Window system and GTK+
 Summary(es):	Un visualizador de imágenes basado en X Window y GTK+
-Summary(pt_BR): Um visualizador de imagens baseado no X Window e GTK+
+Summary(pt_BR):Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
 Version:	0.5.0
-Release:	2
+Release:	3
 License:	GPL2
 Group:		X11/Applications/Graphics
+Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://www.zg169.net/~hotaru/gtksee/%{name}-%{version}.tar.gz
-Source1:	gtksee.desktop
-Source2:	gtksee.png
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 Icon:		gtksee.xpm
 URL:		http://www.zg169.net/~hotaru/gtksee/index_en.html
 BuildRequires:	gettext-devel
@@ -20,7 +21,6 @@ BuildRequires:	libtiff-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 A Image viewer based on X-Window system and GTK+. The main purpose is
