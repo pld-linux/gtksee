@@ -4,7 +4,7 @@ Summary(pl):	Przegl±darka plików graficznych oparta na bibliotece GTK+
 Summary(pt_BR):	Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
 Version:	0.5.0
-Release:	4
+Release:	5
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	http://www.zg169.net/~hotaru/gtksee/%{name}-%{version}.tar.gz
@@ -52,7 +52,10 @@ gettextize --copy --force
 aclocal
 autoconf
 automake -a -c -f
-%configure
+if [ -f %{_pkgconfigdir}/libpng12.pc ] ; then
+	CPPFLAGS="`pkg-config libpng12 --cflags`"
+fi
+%configure CPPFLAGS="$CPPFLAGS"
 %{__make}
 
 %install
