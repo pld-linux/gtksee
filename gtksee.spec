@@ -67,7 +67,6 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Graphics/Viewers,%{_datadir}/pixmaps}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Graphics/Viewers
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
-gzip -9nf AUTHORS ChangeLog NEWS README TODO
 
 %find_lang %{name}
 
@@ -76,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/gtksee
 %{_pixmapsdir}/*
 %{_applnkdir}/Graphics/Viewers/gtksee.desktop
