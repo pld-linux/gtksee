@@ -7,8 +7,6 @@ Version:	0.5.0
 Release:	4
 License:	GPL v2
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://www.zg169.net/~hotaru/gtksee/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
