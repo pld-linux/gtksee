@@ -4,24 +4,22 @@ Summary(pl):	Przegl±darka plików graficznych oparta na bibliotece GTK+
 Summary(pt_BR):	Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
 Version:	0.5.2
-Release:	4
-License:	GPL2
+Release:	1
+License:	GPL v2
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
 # Source0-md5:	a5012896f86dde9fc90be71a413e7326
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		gtksee.xpm
 URL:		http://www.zg169.net/~hotaru/gtksee/index_en.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libtiff-devel
-BuildRequires:	automake
-BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -38,8 +36,8 @@ See, que es mucho popular.
 
 %description -l pl
 Gtksee to przegl±darka plików graficznych dzia³aj±ca pod X Window
-System i korzystaj±ca z biblioteki GTK+. Ma jak najbardziej przypominaæ
-znan± ze ¶wiata MS Windows przegl±darkê ACD See.
+System i korzystaj±ca z biblioteki GTK+. Ma jak najbardziej
+przypominaæ znan± ze ¶wiata MS Windows przegl±darkê ACD See.
 
 %description -l pt_BR
 Um visualizador de imagens baseado no X Window e GTK+. Pretende ter as
@@ -51,23 +49,23 @@ Microsoft(r).
 
 %build
 rm -rf missing
-gettextize --copy --force
-aclocal
-autoconf
-automake -a -c
+%{__gettextize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
+
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Graphics/Viewers,%{_datadir}/pixmaps}
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Graphics/Viewers,%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Graphics/Viewers
-install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-gzip -9nf AUTHORS ChangeLog NEWS README TODO
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %find_lang %{name}
 
@@ -76,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/gtksee
 %{_pixmapsdir}/*
 %{_applnkdir}/Graphics/Viewers/gtksee.desktop
