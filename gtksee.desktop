@@ -10,4 +10,5 @@ Icon=gtksee.png
 Terminal=false
 Type=Application
 Encoding=UTF-8
+Categories=Graphics;Viewer;
 # vi: encoding=utf-8
