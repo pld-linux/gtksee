@@ -49,7 +49,7 @@ Microsoft(r).
 %build
 rm -rf missing
 %{__gettextize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 if [ -f %{_pkgconfigdir}/libpng12.pc ] ; then
