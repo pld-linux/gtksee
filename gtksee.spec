@@ -3,12 +3,12 @@ Summary(es):	Un visualizador de imágenes basado en X Window y GTK+
 Summary(pl):	Przegl±darka plików graficznych oparta na bibliotece GTK+
 Summary(pt_BR):	Um visualizador de imagens baseado no X Window e GTK+
 Name:		gtksee
-Version:	0.5.2
+Version:	0.5.3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
-# Source0-md5:	a5012896f86dde9fc90be71a413e7326
+# Source0-md5:	66fc14064ffcac30b2e73c2da330cdcb
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		gtksee.xpm
