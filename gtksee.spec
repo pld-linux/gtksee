@@ -9,7 +9,7 @@ License:	GPL2
 Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
-Source0:	http://www.zg169.net/~hotaru/gtksee/%{name}-%{version}.tar.gz
+Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
 # Source0-md5:	a5012896f86dde9fc90be71a413e7326
 Source1:	%{name}.desktop
 Source2:	%{name}.png
