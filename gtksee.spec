@@ -1,4 +1,4 @@
-Summary:	A Image viewer based on X-Window system and GTK+
+Summary:	An Image viewer based on X-Window system and GTK+
 Summary(es):	Un visualizador de imágenes basado en X Window y GTK+
 Summary(pl):	Przegl±darka plików graficznych oparta na bibliotece GTK+
 Summary(pt_BR):	Um visualizador de imagens baseado no X Window e GTK+
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-A Image viewer based on X-Window system and GTK+. The main purpose is
+An Image viewer based on X-Window system and GTK+. The main purpose is
 to port ACD See, which is a very popular image viewer in M$ world, to
 Unix platform.
 
