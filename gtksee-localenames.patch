@@ -5,7 +5,7 @@
  dnl Checks for i18n support
  dnl =======================
 -ALL_LINGUAS="zh_CN.EUC fr es de ru ru_UA pl"
-+ALL_LINGUAS="zh_CN fr es de ru ru_UA pl"
++ALL_LINGUAS="zh_CN fr es de ru uk pl"
  AM_GNU_GETTEXT
  LIBS="$LIBS $INTLLIBS"
  localedir='$(prefix)/$(DATADIRNAME)/locale'
