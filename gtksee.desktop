@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GtkSee
+Comment=Image Viewer
+Comment[es]=Utilitario para visualización de imágenes
+Comment[pt]=Utilitário para visualização de imagens
+Exec=gtksee
+Icon=gtksee.png
+Terminal=0
+Type=Application
