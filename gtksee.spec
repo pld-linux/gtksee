@@ -13,6 +13,10 @@ Source2:	gtksee.png
 Icon:		gtksee.xpm
 URL:		http://www.zg169.net/~hotaru/gtksee/index_en.html
 BuildRequires:	gettext-devel
+BuildRequires:	gtk+-devel
+BuildRequires:	libjpeg-devel
+BuildRequires:	libpng-devel
+BuildRequires:	libtiff-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
