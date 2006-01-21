@@ -12,7 +12,6 @@ Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-localenames.patch
-Icon:		gtksee.xpm
 URL:		http://gtksee.berlios.de/index.php
 BuildRequires:	autoconf
 BuildRequires:	automake
