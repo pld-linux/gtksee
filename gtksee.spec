@@ -7,6 +7,7 @@ Version:	0.5.6
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
+#Source0Download: http://developer.berlios.de/project/showfiles.php?group_id=735
 Source0:	http://download.berlios.de/gtksee/%{name}-%{version}.tar.gz
 # Source0-md5:	1f5a43a869938c7a2bef1276203dfdc5
 Source1:	%{name}.desktop
