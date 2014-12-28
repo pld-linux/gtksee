@@ -16,7 +16,7 @@ Patch0:		%{name}-localenames.patch
 URL:		http://gtksee.berlios.de/index.php
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
